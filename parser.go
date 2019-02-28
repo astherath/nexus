@@ -18,9 +18,7 @@ type Matches struct {
 	Matches []Match
 }
 
-func parse() {
-	pathname := "test.json"
-
+func parse(pathname string) Matches {
 	// read the json file in the pathname given as a byte array
 	fileArray, er := ioutil.ReadFile(pathname)
 
@@ -37,7 +35,10 @@ func parse() {
 
 	// error handling again for the json file marshaling
 	if eror != nil {
-		fmt.Println("error here again pally: ", eror)
+		fmt.Println("error unmarshaling the file: ", eror)
 	}
+
+	// returns marshalled array of matches
+	return matches
 
 }
