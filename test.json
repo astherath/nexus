@@ -1,0 +1,3335 @@
+{
+  "matches": 
+  [
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "origen-vs-splyce-2019-03-01",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 114,
+          "score": 0
+        },
+        {
+          "team_id": 20,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "origen",
+            "name": "Origen",
+            "image_url": "https://cdn.pandascore.co/images/team/image/20/Origenlogo-square.png",
+            "id": 20,
+            "acronym": "OG"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "splyce",
+            "name": "Splyce",
+            "image_url": "https://cdn.pandascore.co/images/team/image/114/Splycelogo_square.png",
+            "id": 114,
+            "acronym": "SPY"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "OG vs SPY",
+      "modified_at": "2019-02-26T11:19:36Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536632",
+        "supported": true,
+        "opens_at": "2019-03-01T16:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536632,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536632,
+          "length": null,
+          "id": 203814,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-01T17:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "sk-gaming-vs-excel-esports-2019-03-01",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 2721,
+          "score": 0
+        },
+        {
+          "team_id": 395,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "sk-gaming",
+            "name": "SK Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/395/600px-SK_Gaminglogo_square.png",
+            "id": 395,
+            "acronym": "SK"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "excel-esports",
+            "name": "exceL Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/2721/600px-Excel_Esports_2019.png",
+            "id": 2721,
+            "acronym": "XL"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "SK vs XL",
+      "modified_at": "2019-02-26T11:20:39Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536589",
+        "supported": true,
+        "opens_at": "2019-03-01T17:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536589,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536589,
+          "length": null,
+          "id": 203771,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-01T18:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "misfits-gaming-vs-vitality-2019-03-01",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 115,
+          "score": 0
+        },
+        {
+          "team_id": 37,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "misfits",
+            "name": "Misfits Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/37/misfits-8fnvxt30.png",
+            "id": 37,
+            "acronym": "MSF"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "vitality",
+            "name": "Vitality",
+            "image_url": "https://cdn.pandascore.co/images/team/image/115/Team_Vitalitylogo_square.png",
+            "id": 115,
+            "acronym": "VIT"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "MSF vs VIT",
+      "modified_at": "2019-02-23T16:50:20Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536547",
+        "supported": true,
+        "opens_at": "2019-03-01T18:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536547,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536547,
+          "length": null,
+          "id": 203729,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-01T19:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "rogue-vs-g2-esports-2019-03-01",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 3983,
+          "score": 0
+        },
+        {
+          "team_id": 88,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "rogue",
+            "name": "Rogue",
+            "image_url": "https://cdn.pandascore.co/images/team/image/3983/Rogue__2018_European_Team_logo_square.png",
+            "id": 3983,
+            "acronym": "RGE"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/88/g2-esports-cbnyfbkl.png",
+            "id": 88,
+            "acronym": "G2"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "RGE vs G2",
+      "modified_at": "2019-02-23T16:49:20Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536565",
+        "supported": true,
+        "opens_at": "2019-03-01T19:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536565,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536565,
+          "length": null,
+          "id": 203747,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-01T20:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "fnatic-vs-fc-schalke-04-esports-2019-03-01",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 394,
+          "score": 0
+        },
+        {
+          "team_id": 204,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fnatic",
+            "name": "Fnatic",
+            "image_url": "https://cdn.pandascore.co/images/team/image/394/Fnaticlogo-square.png",
+            "id": 394,
+            "acronym": "FNC"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fc-schalke-04",
+            "name": "FC Schalke 04 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/204/fc-schalke-04-h992ofkj.png",
+            "id": 204,
+            "acronym": "S04"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "FNC vs S04",
+      "modified_at": "2019-02-23T16:48:19Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536555",
+        "supported": true,
+        "opens_at": "2019-03-01T20:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536555,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536555,
+          "length": null,
+          "id": 203737,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-01T21:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "sk-gaming-vs-g2-esports-2019-03-02",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 395,
+          "score": 0
+        },
+        {
+          "team_id": 88,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "sk-gaming",
+            "name": "SK Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/395/600px-SK_Gaminglogo_square.png",
+            "id": 395,
+            "acronym": "SK"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/88/g2-esports-cbnyfbkl.png",
+            "id": 88,
+            "acronym": "G2"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "SK vs G2",
+      "modified_at": "2019-02-26T11:26:07Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536546",
+        "supported": true,
+        "opens_at": "2019-03-02T15:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536546,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536546,
+          "length": null,
+          "id": 203728,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-02T16:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "fc-schalke-04-esports-vs-splyce-2019-03-02",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 204,
+          "score": 0
+        },
+        {
+          "team_id": 114,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fc-schalke-04",
+            "name": "FC Schalke 04 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/204/fc-schalke-04-h992ofkj.png",
+            "id": 204,
+            "acronym": "S04"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "splyce",
+            "name": "Splyce",
+            "image_url": "https://cdn.pandascore.co/images/team/image/114/Splycelogo_square.png",
+            "id": 114,
+            "acronym": "SPY"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "S04 vs SPY",
+      "modified_at": "2019-02-23T17:07:31Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536588",
+        "supported": true,
+        "opens_at": "2019-03-02T16:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536588,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536588,
+          "length": null,
+          "id": 203770,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-02T17:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "rogue-vs-fnatic-2019-03-02",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 3983,
+          "score": 0
+        },
+        {
+          "team_id": 394,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "rogue",
+            "name": "Rogue",
+            "image_url": "https://cdn.pandascore.co/images/team/image/3983/Rogue__2018_European_Team_logo_square.png",
+            "id": 3983,
+            "acronym": "RGE"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fnatic",
+            "name": "Fnatic",
+            "image_url": "https://cdn.pandascore.co/images/team/image/394/Fnaticlogo-square.png",
+            "id": 394,
+            "acronym": "FNC"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "RGE vs FNC",
+      "modified_at": "2019-02-23T17:07:35Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536599",
+        "supported": true,
+        "opens_at": "2019-03-02T17:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536599,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536599,
+          "length": null,
+          "id": 203781,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-02T18:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "excel-esports-vs-misfits-gaming-2019-03-02",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 2721,
+          "score": 0
+        },
+        {
+          "team_id": 37,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "excel-esports",
+            "name": "exceL Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/2721/600px-Excel_Esports_2019.png",
+            "id": 2721,
+            "acronym": "XL"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "misfits",
+            "name": "Misfits Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/37/misfits-8fnvxt30.png",
+            "id": 37,
+            "acronym": "MSF"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "XL vs MSF",
+      "modified_at": "2019-02-26T11:27:33Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536584",
+        "supported": true,
+        "opens_at": "2019-03-02T18:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536584,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536584,
+          "length": null,
+          "id": 203766,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-02T19:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "origen-vs-vitality-2019-03-02",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 115,
+          "score": 0
+        },
+        {
+          "team_id": 20,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "origen",
+            "name": "Origen",
+            "image_url": "https://cdn.pandascore.co/images/team/image/20/Origenlogo-square.png",
+            "id": 20,
+            "acronym": "OG"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "vitality",
+            "name": "Vitality",
+            "image_url": "https://cdn.pandascore.co/images/team/image/115/Team_Vitalitylogo_square.png",
+            "id": 115,
+            "acronym": "VIT"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "OG vs VIT",
+      "modified_at": "2019-02-26T11:26:43Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536583",
+        "supported": true,
+        "opens_at": "2019-03-02T19:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536583,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536583,
+          "length": null,
+          "id": 203765,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-02T20:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "g2-esports-vs-splyce-2019-03-08",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 114,
+          "score": 0
+        },
+        {
+          "team_id": 88,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/88/g2-esports-cbnyfbkl.png",
+            "id": 88,
+            "acronym": "G2"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "splyce",
+            "name": "Splyce",
+            "image_url": "https://cdn.pandascore.co/images/team/image/114/Splycelogo_square.png",
+            "id": 114,
+            "acronym": "SPY"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "G2 vs SPY",
+      "modified_at": "2019-01-11T12:34:21Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536611",
+        "supported": true,
+        "opens_at": "2019-03-08T16:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536611,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536611,
+          "length": null,
+          "id": 203793,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-08T17:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "excel-esports-vs-fc-schalke-04-esports-2019-03-08",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 2721,
+          "score": 0
+        },
+        {
+          "team_id": 204,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "excel-esports",
+            "name": "exceL Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/2721/600px-Excel_Esports_2019.png",
+            "id": 2721,
+            "acronym": "XL"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fc-schalke-04",
+            "name": "FC Schalke 04 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/204/fc-schalke-04-h992ofkj.png",
+            "id": 204,
+            "acronym": "S04"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "XL vs S04",
+      "modified_at": "2019-01-11T12:34:25Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536594",
+        "supported": true,
+        "opens_at": "2019-03-08T17:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536594,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536594,
+          "length": null,
+          "id": 203776,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-08T18:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "sk-gaming-vs-origen-2019-03-08",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 395,
+          "score": 0
+        },
+        {
+          "team_id": 20,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "sk-gaming",
+            "name": "SK Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/395/600px-SK_Gaminglogo_square.png",
+            "id": 395,
+            "acronym": "SK"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "origen",
+            "name": "Origen",
+            "image_url": "https://cdn.pandascore.co/images/team/image/20/Origenlogo-square.png",
+            "id": 20,
+            "acronym": "OG"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "SK vs OG",
+      "modified_at": "2019-01-11T12:37:08Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536573",
+        "supported": true,
+        "opens_at": "2019-03-08T18:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536573,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536573,
+          "length": null,
+          "id": 203755,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-08T19:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "rogue-vs-vitality-2019-03-08",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 3983,
+          "score": 0
+        },
+        {
+          "team_id": 115,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "rogue",
+            "name": "Rogue",
+            "image_url": "https://cdn.pandascore.co/images/team/image/3983/Rogue__2018_European_Team_logo_square.png",
+            "id": 3983,
+            "acronym": "RGE"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "vitality",
+            "name": "Vitality",
+            "image_url": "https://cdn.pandascore.co/images/team/image/115/Team_Vitalitylogo_square.png",
+            "id": 115,
+            "acronym": "VIT"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "RGE vs VIT",
+      "modified_at": "2019-01-09T12:25:05Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536581",
+        "supported": true,
+        "opens_at": "2019-03-08T19:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536581,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536581,
+          "length": null,
+          "id": 203763,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-08T20:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "fnatic-vs-misfits-gaming-2019-03-08",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 394,
+          "score": 0
+        },
+        {
+          "team_id": 37,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fnatic",
+            "name": "Fnatic",
+            "image_url": "https://cdn.pandascore.co/images/team/image/394/Fnaticlogo-square.png",
+            "id": 394,
+            "acronym": "FNC"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "misfits",
+            "name": "Misfits Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/37/misfits-8fnvxt30.png",
+            "id": 37,
+            "acronym": "MSF"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "FNC vs MSF",
+      "modified_at": "2019-01-09T12:25:02Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536612",
+        "supported": true,
+        "opens_at": "2019-03-08T20:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536612,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536612,
+          "length": null,
+          "id": 203794,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-08T21:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "misfits-gaming-vs-fc-schalke-04-esports-2019-03-09",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 204,
+          "score": 0
+        },
+        {
+          "team_id": 37,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "misfits",
+            "name": "Misfits Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/37/misfits-8fnvxt30.png",
+            "id": 37,
+            "acronym": "MSF"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fc-schalke-04",
+            "name": "FC Schalke 04 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/204/fc-schalke-04-h992ofkj.png",
+            "id": 204,
+            "acronym": "S04"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "MSF vs S04",
+      "modified_at": "2019-01-09T12:25:08Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536587",
+        "supported": true,
+        "opens_at": "2019-03-09T15:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536587,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536587,
+          "length": null,
+          "id": 203769,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-09T16:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "sk-gaming-vs-splyce-2019-03-09",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 395,
+          "score": 0
+        },
+        {
+          "team_id": 114,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "sk-gaming",
+            "name": "SK Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/395/600px-SK_Gaminglogo_square.png",
+            "id": 395,
+            "acronym": "SK"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "splyce",
+            "name": "Splyce",
+            "image_url": "https://cdn.pandascore.co/images/team/image/114/Splycelogo_square.png",
+            "id": 114,
+            "acronym": "SPY"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "SK vs SPY",
+      "modified_at": "2019-01-11T12:37:08Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536574",
+        "supported": true,
+        "opens_at": "2019-03-09T16:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536574,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536574,
+          "length": null,
+          "id": 203756,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-09T17:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "origen-vs-rogue-2019-03-09",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 3983,
+          "score": 0
+        },
+        {
+          "team_id": 20,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "origen",
+            "name": "Origen",
+            "image_url": "https://cdn.pandascore.co/images/team/image/20/Origenlogo-square.png",
+            "id": 20,
+            "acronym": "OG"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "rogue",
+            "name": "Rogue",
+            "image_url": "https://cdn.pandascore.co/images/team/image/3983/Rogue__2018_European_Team_logo_square.png",
+            "id": 3983,
+            "acronym": "RGE"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "OG vs RGE",
+      "modified_at": "2019-01-11T12:36:01Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536570",
+        "supported": true,
+        "opens_at": "2019-03-09T17:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536570,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536570,
+          "length": null,
+          "id": 203752,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-09T18:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "excel-esports-vs-fnatic-2019-03-09",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 2721,
+          "score": 0
+        },
+        {
+          "team_id": 394,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "excel-esports",
+            "name": "exceL Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/2721/600px-Excel_Esports_2019.png",
+            "id": 2721,
+            "acronym": "XL"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fnatic",
+            "name": "Fnatic",
+            "image_url": "https://cdn.pandascore.co/images/team/image/394/Fnaticlogo-square.png",
+            "id": 394,
+            "acronym": "FNC"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "XL vs FNC",
+      "modified_at": "2019-01-09T12:25:05Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536621",
+        "supported": true,
+        "opens_at": "2019-03-09T18:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536621,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536621,
+          "length": null,
+          "id": 203803,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-09T19:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "g2-esports-vs-vitality-2019-03-09",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 115,
+          "score": 0
+        },
+        {
+          "team_id": 88,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/88/g2-esports-cbnyfbkl.png",
+            "id": 88,
+            "acronym": "G2"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "vitality",
+            "name": "Vitality",
+            "image_url": "https://cdn.pandascore.co/images/team/image/115/Team_Vitalitylogo_square.png",
+            "id": 115,
+            "acronym": "VIT"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "G2 vs VIT",
+      "modified_at": "2019-01-09T12:25:02Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536579",
+        "supported": true,
+        "opens_at": "2019-03-09T19:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536579,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536579,
+          "length": null,
+          "id": 203761,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-09T20:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "origen-vs-fc-schalke-04-esports-2019-03-15",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 204,
+          "score": 0
+        },
+        {
+          "team_id": 20,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "origen",
+            "name": "Origen",
+            "image_url": "https://cdn.pandascore.co/images/team/image/20/Origenlogo-square.png",
+            "id": 20,
+            "acronym": "OG"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fc-schalke-04",
+            "name": "FC Schalke 04 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/204/fc-schalke-04-h992ofkj.png",
+            "id": 204,
+            "acronym": "S04"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "OG vs S04",
+      "modified_at": "2019-01-09T12:25:03Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536625",
+        "supported": true,
+        "opens_at": "2019-03-15T16:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536625,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536625,
+          "length": null,
+          "id": 203807,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-15T17:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "sk-gaming-vs-rogue-2019-03-15",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 3983,
+          "score": 0
+        },
+        {
+          "team_id": 395,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "sk-gaming",
+            "name": "SK Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/395/600px-SK_Gaminglogo_square.png",
+            "id": 395,
+            "acronym": "SK"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "rogue",
+            "name": "Rogue",
+            "image_url": "https://cdn.pandascore.co/images/team/image/3983/Rogue__2018_European_Team_logo_square.png",
+            "id": 3983,
+            "acronym": "RGE"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "SK vs RGE",
+      "modified_at": "2019-01-11T12:37:08Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536633",
+        "supported": true,
+        "opens_at": "2019-03-15T17:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536633,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536633,
+          "length": null,
+          "id": 203815,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-15T18:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "misfits-gaming-vs-splyce-2019-03-15",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 114,
+          "score": 0
+        },
+        {
+          "team_id": 37,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "misfits",
+            "name": "Misfits Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/37/misfits-8fnvxt30.png",
+            "id": 37,
+            "acronym": "MSF"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "splyce",
+            "name": "Splyce",
+            "image_url": "https://cdn.pandascore.co/images/team/image/114/Splycelogo_square.png",
+            "id": 114,
+            "acronym": "SPY"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "MSF vs SPY",
+      "modified_at": "2019-01-09T12:25:05Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536557",
+        "supported": true,
+        "opens_at": "2019-03-15T18:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536557,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536557,
+          "length": null,
+          "id": 203739,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-15T19:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "excel-esports-vs-vitality-2019-03-15",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 2721,
+          "score": 0
+        },
+        {
+          "team_id": 115,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "excel-esports",
+            "name": "exceL Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/2721/600px-Excel_Esports_2019.png",
+            "id": 2721,
+            "acronym": "XL"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "vitality",
+            "name": "Vitality",
+            "image_url": "https://cdn.pandascore.co/images/team/image/115/Team_Vitalitylogo_square.png",
+            "id": 115,
+            "acronym": "VIT"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "XL vs VIT",
+      "modified_at": "2019-01-11T12:36:09Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536556",
+        "supported": true,
+        "opens_at": "2019-03-15T19:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536556,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536556,
+          "length": null,
+          "id": 203738,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-15T20:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "fnatic-vs-g2-esports-2019-03-15",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 394,
+          "score": 0
+        },
+        {
+          "team_id": 88,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fnatic",
+            "name": "Fnatic",
+            "image_url": "https://cdn.pandascore.co/images/team/image/394/Fnaticlogo-square.png",
+            "id": 394,
+            "acronym": "FNC"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/88/g2-esports-cbnyfbkl.png",
+            "id": 88,
+            "acronym": "G2"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "FNC vs G2",
+      "modified_at": "2019-01-09T12:25:08Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536569",
+        "supported": true,
+        "opens_at": "2019-03-15T20:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536569,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536569,
+          "length": null,
+          "id": 203751,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-15T21:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "fnatic-vs-splyce-2019-03-16",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 394,
+          "score": 0
+        },
+        {
+          "team_id": 114,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fnatic",
+            "name": "Fnatic",
+            "image_url": "https://cdn.pandascore.co/images/team/image/394/Fnaticlogo-square.png",
+            "id": 394,
+            "acronym": "FNC"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "splyce",
+            "name": "Splyce",
+            "image_url": "https://cdn.pandascore.co/images/team/image/114/Splycelogo_square.png",
+            "id": 114,
+            "acronym": "SPY"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "FNC vs SPY",
+      "modified_at": "2019-01-11T12:36:13Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536545",
+        "supported": true,
+        "opens_at": "2019-03-16T15:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536545,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536545,
+          "length": null,
+          "id": 203727,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-16T16:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "origen-vs-excel-esports-2019-03-16",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 2721,
+          "score": 0
+        },
+        {
+          "team_id": 20,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "origen",
+            "name": "Origen",
+            "image_url": "https://cdn.pandascore.co/images/team/image/20/Origenlogo-square.png",
+            "id": 20,
+            "acronym": "OG"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "excel-esports",
+            "name": "exceL Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/2721/600px-Excel_Esports_2019.png",
+            "id": 2721,
+            "acronym": "XL"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "OG vs XL",
+      "modified_at": "2019-01-11T12:36:17Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536571",
+        "supported": true,
+        "opens_at": "2019-03-16T16:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536571,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536571,
+          "length": null,
+          "id": 203753,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-16T17:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "sk-gaming-vs-vitality-2019-03-16",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 395,
+          "score": 0
+        },
+        {
+          "team_id": 115,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "sk-gaming",
+            "name": "SK Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/395/600px-SK_Gaminglogo_square.png",
+            "id": 395,
+            "acronym": "SK"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "vitality",
+            "name": "Vitality",
+            "image_url": "https://cdn.pandascore.co/images/team/image/115/Team_Vitalitylogo_square.png",
+            "id": 115,
+            "acronym": "VIT"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "SK vs VIT",
+      "modified_at": "2019-01-11T12:37:08Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536626",
+        "supported": true,
+        "opens_at": "2019-03-16T17:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536626,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536626,
+          "length": null,
+          "id": 203808,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-16T18:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "rogue-vs-fc-schalke-04-esports-2019-03-16",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 3983,
+          "score": 0
+        },
+        {
+          "team_id": 204,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "rogue",
+            "name": "Rogue",
+            "image_url": "https://cdn.pandascore.co/images/team/image/3983/Rogue__2018_European_Team_logo_square.png",
+            "id": 3983,
+            "acronym": "RGE"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "fc-schalke-04",
+            "name": "FC Schalke 04 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/204/fc-schalke-04-h992ofkj.png",
+            "id": 204,
+            "acronym": "S04"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "RGE vs S04",
+      "modified_at": "2019-01-11T12:36:21Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536615",
+        "supported": true,
+        "opens_at": "2019-03-16T18:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536615,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536615,
+          "length": null,
+          "id": 203797,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-16T19:00:00Z"
+    },
+    {
+      "winner_id": null,
+      "winner": null,
+      "videogame_version": null,
+      "videogame": {
+        "slug": "league-of-legends",
+        "name": "LoL",
+        "id": 1
+      },
+      "tournament_id": 2050,
+      "tournament": {
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019-regular-season",
+        "serie_id": 1704,
+        "name": "Regular season",
+        "modified_at": "2019-02-23T19:11:58Z",
+        "league_id": 4197,
+        "id": 2050,
+        "end_at": "2019-04-07T00:00:00Z",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "status": "not_started",
+      "slug": "g2-esports-vs-misfits-gaming-2019-03-16",
+      "serie_id": 1704,
+      "serie": {
+        "year": 2019,
+        "winner_type": null,
+        "winner_id": null,
+        "slug": "league-of-legends-lec-spring-2019",
+        "season": "Spring",
+        "prizepool": null,
+        "name": "",
+        "modified_at": "2019-01-09T12:23:51Z",
+        "league_id": 4197,
+        "id": 1704,
+        "full_name": "Spring 2019",
+        "end_at": null,
+        "description": "2019 LEC Spring Split",
+        "begin_at": "2019-01-18T17:00:00Z"
+      },
+      "results": [
+        {
+          "team_id": 88,
+          "score": 0
+        },
+        {
+          "team_id": 37,
+          "score": 0
+        }
+      ],
+      "opponents": [
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "g2-esports",
+            "name": "G2 Esports",
+            "image_url": "https://cdn.pandascore.co/images/team/image/88/g2-esports-cbnyfbkl.png",
+            "id": 88,
+            "acronym": "G2"
+          }
+        },
+        {
+          "type": "Team",
+          "opponent": {
+            "slug": "misfits",
+            "name": "Misfits Gaming",
+            "image_url": "https://cdn.pandascore.co/images/team/image/37/misfits-8fnvxt30.png",
+            "id": 37,
+            "acronym": "MSF"
+          }
+        }
+      ],
+      "number_of_games": 1,
+      "name": "G2 vs MSF",
+      "modified_at": "2019-01-09T12:25:08Z",
+      "match_type": "best_of",
+      "live": {
+        "url": "wss://live.pandascore.co/matches/536609",
+        "supported": true,
+        "opens_at": "2019-03-16T19:00:00Z"
+      },
+      "league_id": 4197,
+      "league": {
+        "url": null,
+        "slug": "league-of-legends-lec",
+        "name": "LEC",
+        "modified_at": null,
+        "live_supported": true,
+        "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+        "id": 4197
+      },
+      "id": 536609,
+      "games": [
+        {
+          "winner_type": null,
+          "winner": {
+            "type": null,
+            "id": null
+          },
+          "position": 1,
+          "match_id": 536609,
+          "length": null,
+          "id": 203791,
+          "finished": false,
+          "begin_at": null
+        }
+      ],
+      "draw": false,
+      "begin_at": "2019-03-16T20:00:00Z"
+    }
+  ]
+}
