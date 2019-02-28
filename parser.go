@@ -26,7 +26,7 @@ func parse() {
 
 	// error handling for the file reading
 	if er != nil {
-	    fmt.Println("error reading the file using ioutil: ", er)
+		fmt.Println("error reading the file using ioutil: ", er)
 	}
 
 	// also initializes a matches struct to store our data
@@ -37,7 +37,7 @@ func parse() {
 
 	// error handling again for the json file marshaling
 	if eror != nil {
-	    fmt.Println("error here again pally: ", eror)
+		fmt.Println("error here again pally: ", eror)
 	}
 
 }
