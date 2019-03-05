@@ -22,8 +22,6 @@ func Parse(pathname string) Matches {
 	// read the json file in the pathname given as a byte array
 	fileArray, er := ioutil.ReadFile(pathname)
 
-	fmt.Println(pathname)
-
 	// error handling for the file reading
 	if er != nil {
 		fmt.Println("error reading the file using ioutil: ", er)
