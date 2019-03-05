@@ -18,17 +18,22 @@ func HandleMatches(ms parser.Matches) string {
 
 		// concats the string
 		matchInfo += "Match name: " + current.Name + "\n"
-		matchInfo += "Match status: " + current.Status + "\n"
 
-		// stores year
-		year := readDate(current)
+		// calls function to format the match status
+		status := readStatus(current)
+		// concats the status to the info string
+		matchInfo += "Match status: " + status + "\n"
 
-		matchInfo += "Match Starts at: " + year + "\n\n"
+		// calls a function to format the starting time for the match
+		startTime := readDate(current)
+		// concats the formatted date to the match info string
+		matchInfo += "Match Starts at: " + startTime + "\n\n"
 	}
 
 	return matchInfo
 }
 
+// returns the data of the match in a suitable format given a Match
 func readDate(m parser.Match) string {
 
 	// converts  the "begin_at" part of the match
@@ -50,6 +55,18 @@ func readDate(m parser.Match) string {
 	post := t.Format(form)
 
 	// return the week number (relative to the first week given)
-
 	return string(post)
+}
+
+func readStatus(m parser.Match) string {
+
+	// stores the status of the Match passed
+	status := m.Status
+
+	// simple if statement to return a formatted version of the match status
+	if status == "not_started" {
+		return "Match Not Started"
+	} else {
+		return "Match Started"
+	}
 }
