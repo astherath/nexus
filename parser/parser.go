@@ -12,6 +12,12 @@ type Match struct {
 	Name     string
 	Begin_at string
 	Status   string
+	Winner   Winner
+}
+
+type Winner struct {
+	Name    string
+	Acronym string
 }
 
 type Matches struct {
