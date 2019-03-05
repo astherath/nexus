@@ -20,10 +20,18 @@ func HandleMatches(ms parser.Matches) string {
 		matchInfo += "Match name: " + current.Name + "\n"
 
 		// calls function to format the match status
-		status := readStatus(current)
-		// concats the status to the info string
-		matchInfo += "Match status: " + status + "\n"
+		ended, status := readStatus(current)
 
+		// if the match has ended (status returns 1), then respond with winner
+		if ended == 1 {
+			// assign the winner of the match to a var
+			winnerName := current.Winner.Name
+			// concat the winner to the info string
+			matchInfo += "Match Ended, Winner is: " + winnerName + "\n"
+		} else {
+			// concats the status to the info string
+			matchInfo += "Match status: " + status + "\n"
+		}
 		// calls a function to format the starting time for the match
 		startTime := readDate(current)
 		// concats the formatted date to the match info string
@@ -58,15 +66,15 @@ func readDate(m parser.Match) string {
 	return string(post)
 }
 
-func readStatus(m parser.Match) string {
+func readStatus(m parser.Match) (int, string) {
 
 	// stores the status of the Match passed
 	status := m.Status
 
 	// simple if statement to return a formatted version of the match status
 	if status == "not_started" {
-		return "Match Not Started"
+		return 0, "Match Not Started"
 	} else {
-		return "Match Started"
+		return 1, "Match Started"
 	}
 }
