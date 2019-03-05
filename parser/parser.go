@@ -19,6 +19,7 @@ type Matches struct {
 }
 
 func Parse(pathname string) Matches {
+
 	// read the json file in the pathname given as a byte array
 	fileArray, er := ioutil.ReadFile(pathname)
 
