@@ -9,41 +9,65 @@ import (
 
 // a week struct knows it's week number, it's matches, and the days it's played on
 type Week struct {
-	weekNumber int
-	firstDay   string
-	secondDay  string
-	matches    []parser.Match
+	WeekNumber int
+	FirstDay   string
+	SecondDay  string
+	Matches    []parser.Match
 }
 
-// handles and returns a printable statement given a []Match
+// handles and returns a printable statement given a Week
 func HandleMatches(ms parser.Matches) string {
+
+	// immediately calls the function to split the matches into weeks
+	weeks := splitWeeks(ms)
 
 	// string to be returned
 	matchInfo := ""
-	for i := 0; i < len(ms.Matches); i++ {
-		// stores current match
-		current := ms.Matches[i]
+	// outer loop to iterate for every week in the week aray passed
+	for i := 0; i < len(weeks); i++ {
 
-		// concats the string
-		matchInfo += "Match name: " + current.Name + "\n"
+		// saves current week being worked on
+		current_week := weeks[i]
+		// start off the week on the first day
+		week_day := current_week.FirstDay
 
-		// calls function to format the match status
-		ended, status := readStatus(current)
+		// make the week header
+		week_header := fmt.Sprintf("%s%d\n", "Week Number ", current_week.WeekNumber)
+		matchInfo += week_header
 
-		// if the match has ended (status returns 1), then respond with winner
-		if ended == 1 {
-			// assign the winner of the match to a var
-			winnerName := current.Winner.Name
-			// concat the winner to the info string
-			matchInfo += "Match Ended, Winner is: " + winnerName + "\n"
-		} else {
-			// concats the status to the info string
-			matchInfo += "Match status: " + status + "\n"
+		// inner loop to go through every match of the week
+		for j := 0; j < len(current_week.Matches); j++ {
+			// stores current match
+			current := current_week.Matches[j]
+
+			// updates week day if week is halfway over
+			if j%5 == 0 {
+				// concats the week day for the game
+				matchInfo += week_day + "\n"
+				week_day = current_week.SecondDay
+			}
+
+			// concats the string
+			matchInfo += "Match name: " + current.Name + "\n"
+
+			// calls function to format the match status
+			ended, status := readStatus(current)
+
+			// if the match has ended (status returns 1), then respond with winner
+			if ended == 1 {
+				// assign the winner of the match to a var
+				winnerName := current.Winner.Name
+				// concat the winner to the info string
+				matchInfo += "Match Ended, Winner is: " + winnerName + "\n"
+			} else {
+				// concats the status to the info string
+				matchInfo += "Match status: " + status + "\n"
+			}
+			// calls a function to format the starting time for the match
+			startTime := readDate(current)
+			// concats the formatted date to the match info string
+			matchInfo += "Match Starts at: " + startTime + "\n\n"
 		}
-		// calls a function to format the starting time for the match
-		startTime := readDate(current)
-		// concats the formatted date to the match info string
-		matchInfo += "Match Starts at: " + startTime + "\n\n"
 	}
 
 	return matchInfo
@@ -87,7 +111,7 @@ func readStatus(m parser.Match) (int, string) {
 	}
 }
 
-// TODO: fun for spliting into weeks, using new week struct
+// func for spliting into weeks, using new week struct
 func splitWeeks(ms parser.Matches) (wks []Week) {
 
 	// creates a new weeks struct to hold the weeks to be created
@@ -102,7 +126,7 @@ func splitWeeks(ms parser.Matches) (wks []Week) {
 		for j := 1; j%11 != 0; j++ {
 
 			// assigns the current match to a var
-			current := ms.Matches[i]
+			current := ms.Matches[j]
 			// append the current match to the current week
 			current_week = append(current_week, current)
 		}
