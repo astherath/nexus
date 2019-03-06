@@ -7,6 +7,14 @@ import (
 	"github.com/astherath/lcs_app/parser"
 )
 
+// a week struct knows it's week number, it's matches, and the days it's played on
+type Week struct {
+	weekNumber int
+	firstDay   string
+	secondDay  string
+	matches    []parser.Match
+}
+
 // handles and returns a printable statement given a []Match
 func HandleMatches(ms parser.Matches) string {
 
@@ -77,4 +85,35 @@ func readStatus(m parser.Match) (int, string) {
 	} else {
 		return 1, "Match Started"
 	}
+}
+
+// TODO: fun for spliting into weeks, using new week struct
+func splitWeeks(ms parser.Matches) (wks []Week) {
+
+	// creates a new weeks struct to hold the weeks to be created
+	var weeks []Week
+
+	// splits a match array into 10 matches, and assigns a week number
+	for i := 1; i <= (len(ms.Matches) / 4); i++ {
+		// create an array of matches to be added into the week at the end
+		var current_week []parser.Match
+
+		// loop to do this function 10 times (one week's worth of matches)
+		for j := 1; j%11 != 0; j++ {
+
+			// assigns the current match to a var
+			current := ms.Matches[i]
+			// append the current match to the current week
+			current_week = append(current_week, current)
+		}
+
+		// creates new week struct from match array
+		new_week := Week{i, "Fri", "Sat", current_week}
+		// adds the week to the array of weeks
+		weeks = append(weeks, new_week)
+	}
+
+	// returns the array of weeks
+	return weeks
+
 }
