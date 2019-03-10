@@ -18,7 +18,7 @@ type Week struct {
 // handles and returns a printable statement given a Week
 func HandleMatches(ms parser.Matches) string {
 
-	// immediately calls the function to split the matches into weeks
+	// calls the function to split the matches into weeks
 	weeks := splitWeeks(ms)
 
 	// string to be returned
