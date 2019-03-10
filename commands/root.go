@@ -12,7 +12,7 @@ import (
 var RootCommand = &cobra.Command{
 
 	// name of the app
-	Use: "Nexus esports tool",
+	Use: "nexus esports tool",
 
 	// short desc of the app
 	Short: "Displays LoL pro match data",
