@@ -9,7 +9,7 @@ import (
 )
 
 // initializing the root command with it's initial options and flags
-var RootCommand = &cobra.Command{
+var RootCmd = &cobra.Command{
 
 	// name of the app
 	Use: "nexus esports tool",
@@ -25,7 +25,7 @@ var RootCommand = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 
 		// stores pathname of the json file to pass into the packages
-		pathname := "test.json"
+		pathname := "~/go/src/github.com/astherath/lcs_app/test.json"
 
 		// create a matches struct (derived from parser pkg)
 		var matches parser.Matches
