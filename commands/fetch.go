@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var fetchCommand = &cobra.Command{
+var fetchCmd = &cobra.Command{
 
 	// name of the cmd
 	// TODO redo all this after testing
@@ -25,5 +25,5 @@ func fetchRun(cmd *cobra.Command, args []string) {
 
 // when root command is called, add this command as well in init
 func init() {
-	RootCommand.AddCommand(fetchCommand)
+	RootCmd.AddCommand(fetchCmd)
 }
