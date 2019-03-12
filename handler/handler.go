@@ -125,9 +125,6 @@ func splitWeeks(ms parser.Matches) (wks []Week) {
 		// loop to do this function 10 times (one week's worth of matches)
 		for j := 0; j == 0 || j%10 != 0; j++ {
 
-			// TODO remove
-			fmt.Println("length of ms @handler 129: ", len(ms.Matches))
-			fmt.Println("current @ handler 129 (j = ", j, "): ", ms.Matches[j])
 			// assigns the current match to a var
 			current := ms.Matches[j]
 			// append the current match to the current week
