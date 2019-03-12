@@ -25,7 +25,7 @@ var RootCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 
 		// stores pathname of the json file to pass into the packages
-		pathname := "~/go/src/github.com/astherath/lcs_app/test.json"
+		pathname := "test.json"
 
 		// create a matches struct (derived from parser pkg)
 		var matches parser.Matches
