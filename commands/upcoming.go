@@ -22,21 +22,16 @@ import (
 
 // upcomingCmd represents the upcoming command
 var upcomingCmd = &cobra.Command{
-	Use:   "upcoming",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Use:   "upcoming -a",
+	Short: "Displays the upcoming LEC matches ",
+	Long:  `Shows the upcoming matches for the LEC 2019 Spring Split`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("upcoming called")
 	},
 }
 
 func init() {
-	rootCmd.AddCommand(upcomingCmd)
+	RootCmd.AddCommand(upcomingCmd)
 
 	// Here you will define your flags and configuration settings.
 
@@ -47,4 +42,7 @@ func init() {
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
 	// upcomingCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+
+	// set a flag to display all weeks in the split
+	upcomingCmd.Flags().BoolP("toggle", "a", false, "Show all upcoming weeks")
 }
