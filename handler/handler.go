@@ -15,6 +15,7 @@
 package handler
 
 import (
+	"errors"
 	"fmt"
 	"time"
 
@@ -22,7 +23,7 @@ import (
 )
 
 // a week struct knows it's week number, it's matches, and the days it's played on
-type Week struct {
+type week struct {
 	WeekNumber int
 	FirstDay   string
 	SecondDay  string
@@ -30,15 +31,35 @@ type Week struct {
 }
 
 // handles and returns a printable statement given a Week
-func HandleMatches(ms parser.Matches) string {
+func GetAllMatches(ms parser.Matches) string {
+	// splits the weeks into matches to find how many weeks there are
+	weeks := splitWeeks(ms)
+
+	// gets the week info for all availbale weeks and returns it
+	matchInfo, err := GetWeeks(ms, len(weeks))
+	if err != nil {
+		fmt.Println("error using --all flag: ", err)
+		return "error"
+	}
+
+	return matchInfo
+}
+
+// returns the specified amoutn of upcoming weeks (returns error if param passed is invalid)
+func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 
 	// calls the function to split the matches into weeks
 	weeks := splitWeeks(ms)
 
+	// if weeks_requested is greater than amount of weeks available, return error
+	if weeks_requested > len(weeks) {
+		return "", errors.New("too many weeks requested; out of bounds")
+	}
+
 	// string to be returned
 	matchInfo := ""
 	// outer loop to iterate for every week in the week aray passed
-	for i := 0; i < len(weeks); i++ {
+	for i := 0; i < weeks_requested; i++ {
 
 		// saves current week being worked on
 		current_week := weeks[i]
@@ -84,7 +105,8 @@ func HandleMatches(ms parser.Matches) string {
 		}
 	}
 
-	return matchInfo
+	// if all goes well, return the string and no errors
+	return matchInfo, nil
 }
 
 // returns the data of the match in a suitable format given a Match
@@ -126,10 +148,10 @@ func readStatus(m parser.Match) (int, string) {
 }
 
 // func for spliting into weeks, using new week struct
-func splitWeeks(ms parser.Matches) (wks []Week) {
+func splitWeeks(ms parser.Matches) (wks []week) {
 
 	// creates a new weeks struct to hold the weeks to be created
-	var weeks []Week
+	var weeks []week
 
 	// splits a match array into 10 matches, and assigns a week number
 	for i := 1; i <= (len(ms.Matches) / 4); i++ {
@@ -146,7 +168,7 @@ func splitWeeks(ms parser.Matches) (wks []Week) {
 		}
 
 		// creates new week struct from match array
-		new_week := Week{i, "Fri", "Sat", current_week}
+		new_week := week{i, "Fri", "Sat", current_week}
 		// adds the week to the array of weeks
 		weeks = append(weeks, new_week)
 	}
