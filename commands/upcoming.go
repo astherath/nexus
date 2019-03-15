@@ -24,24 +24,24 @@ import (
 
 // upcomingCmd represents the upcoming command
 var upcomingCmd = &cobra.Command{
-	Use:   "upcoming",
+	Use:   "upcoming (weeks wanted)",
 	Short: "Displays the upcoming LEC matches ",
 	Long:  `Shows the upcoming matches for the LEC 2019 Spring Split`,
 	// use RunE to throw an error if the user calls this command without any arguments
 	Run: func(cmd *cobra.Command, args []string) {
-		all, err := cmd.Flags().GetBool("all")
+		all, _ := cmd.Flags().GetBool("all")
 
 		// check if user wants all matches displayed
 		if all {
 			// call func to show all
 			fmt.Println("used all flag")
 			showAll()
-		}
+		} else {
+			next, _ := cmd.Flags().GetInt("next")
+			fmt.Println("used next flag")
 
-		if err != nil {
-			fmt.Println("error in all flag: ", err)
+			showWeeks(next)
 		}
-
 	},
 }
 
@@ -61,8 +61,12 @@ func init() {
 	// set a flag to display all weeks in the split
 	upcomingCmd.Flags().BoolP("all", "a", false, "Show all upcoming weeks")
 
+	// flag to show 'n' amount of upcoming weeks
+	upcomingCmd.Flags().IntP("next", "n", 0, "Show a number ('n') of upcoming weeks")
+
 }
 
+// if the --all flag is passed, pass this function to display ALL upcoming matches
 func showAll() {
 	// stores pathname of the json file to pass into the packages
 	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/test.json"
@@ -77,7 +81,31 @@ func showAll() {
 	var response string
 
 	// passes the matches into the handler and stores the string returned
-	response = handler.HandleMatches(matches)
+	response = handler.GetAllMatches(matches)
+
+	// prints the string with all the match info in it
+	fmt.Println(response)
+}
+
+// if no flag is passed, call this function and take the n amount of weeks to show
+func showWeeks(weeks int) {
+	// stores pathname of the json file to pass into the packages
+	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/test.json"
+
+	// create a matches struct (derived from parser pkg)
+	var matches parser.Matches
+
+	// parses the json file with the given pathname and stores the result
+	matches = parser.Parse(pathname)
+
+	// creates a string var to hold the result of the handler
+	var response string
+
+	// passes the matches into the handler and stores the amount of weeks wanted
+	response, err := handler.GetWeeks(matches, weeks)
+	if err != nil {
+		fmt.Println("error when calling showWeeks func: ", err)
+	}
 
 	// prints the string with all the match info in it
 	fmt.Println(response)
