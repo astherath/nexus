@@ -34,12 +34,13 @@ var upcomingCmd = &cobra.Command{
 		// check if user wants all matches displayed
 		if all {
 			// call func to show all
-			fmt.Println("used all flag")
 			showAll()
-		} else {
-			next, _ := cmd.Flags().GetInt("next")
-			fmt.Println("used next flag")
 
+		} else {
+			// stores the input given to flag
+			next, _ := cmd.Flags().GetInt("next")
+
+			// calls the showWeek func for the wanted amount of weeks
 			showWeeks(next)
 		}
 	},
