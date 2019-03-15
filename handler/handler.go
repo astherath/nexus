@@ -67,7 +67,7 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 		week_day := current_week.FirstDay
 
 		// make the week header
-		week_header := fmt.Sprintf("%s%d\n", "Week Number ", current_week.WeekNumber)
+		week_header := fmt.Sprintf("\n%s%d%s\n", "-------------- Week Number ", current_week.WeekNumber, " --------------")
 		matchInfo += week_header
 
 		// inner loop to go through every match of the week
@@ -83,7 +83,7 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 			}
 
 			// concats the string
-			matchInfo += "Match name: " + current.Name + "\n"
+			matchInfo += "\t\tMatch name: " + current.Name + "\n"
 
 			// calls function to format the match status
 			ended, status := readStatus(current)
@@ -93,15 +93,15 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 				// assign the winner of the match to a var
 				winnerName := current.Winner.Name
 				// concat the winner to the info string
-				matchInfo += "Match Ended, Winner is: " + winnerName + "\n"
+				matchInfo += "\t\tMatch Ended, Winner is: " + winnerName + "\n"
 			} else {
 				// concats the status to the info string
-				matchInfo += "Match status: " + status + "\n"
+				matchInfo += "\t\tMatch status: " + status + "\n"
 			}
 			// calls a function to format the starting time for the match
 			startTime := readDate(current)
 			// concats the formatted date to the match info string
-			matchInfo += "Match Starts at: " + startTime + "\n\n"
+			matchInfo += "\t\tMatch Starts at: " + startTime + "\n\n"
 		}
 	}
 
