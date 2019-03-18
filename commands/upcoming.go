@@ -24,7 +24,7 @@ import (
 
 // upcomingCmd represents the upcoming command
 var upcomingCmd = &cobra.Command{
-	Use:   "upcoming (weeks wanted)",
+	Use:   "upcoming",
 	Short: "Displays the upcoming LEC matches ",
 	Long:  `Shows the upcoming matches for the LEC 2019 Spring Split`,
 	// use RunE to throw an error if the user calls this command without any arguments
