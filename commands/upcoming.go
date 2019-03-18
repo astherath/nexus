@@ -70,7 +70,7 @@ func init() {
 // if the --all flag is passed, pass this function to display ALL upcoming matches
 func showAll() {
 	// stores pathname of the json file to pass into the packages
-	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/test.json"
+	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
 
 	// create a matches struct (derived from parser pkg)
 	var matches parser.Matches
@@ -91,7 +91,7 @@ func showAll() {
 // if no flag is passed, call this function and take the n amount of weeks to show
 func showWeeks(weeks int) {
 	// stores pathname of the json file to pass into the packages
-	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/test.json"
+	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
 
 	// create a matches struct (derived from parser pkg)
 	var matches parser.Matches
