@@ -1,0 +1,4 @@
+package fetch
+
+import "fmt"
+
