@@ -16,8 +16,10 @@ package main
 
 import (
 	"github.com/astherath/nexus/commands"
+	"github.com/astherath/nexus/fetcher"
 )
 
 func main() {
 	commands.RootCmd.Execute()
+	fetcher.CURL()
 }
