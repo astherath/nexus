@@ -19,19 +19,39 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"time"
 )
 
 // cURL func for the api to get exported
 func CURL() {
 	// saving our token instead of using a header
-	token := "&token=8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
+	token := "8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
 	// url to access TODO: let this take different params
-	url := "https://api.pandascore.co/leagues/league-of-legends-lcs/matches?filter[status]=not_started&sort=begin_at" + token
+	url := "https://api.pandascore.co/leagues/league-of-legends-lcs/matches?filter[status]=not_started&sort=begin_at"
 
-	// calls the get func to the url and error checks
-	request, err := http.Get(url)
+	// opens a http client in order to set a header and sets the timeout to 20 seconds
+	client := &http.Client{Timeout: time.Second * 20}
+
+	// creates  an http request to the url
+	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		fmt.Println("error when using http get: ", err)
+		fmt.Println("error using http new request: ", err)
+	}
+
+	// add headers to request
+	req.Header.Set("Authorization", "Bearer "+token)
+
+	// for the "If-Modified-Since" header, format today's date
+	today := time.Now()
+	// format the date to match the api's date
+	today_form := today.Format(time.RFC1123)
+
+	req.Header.Add("If-Modified-Since", today_form)
+
+	// executes combined call to client
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("error using client do with req: ", err)
 	}
 
 	// create json file to write response to
@@ -39,19 +59,15 @@ func CURL() {
 	if err != nil {
 		fmt.Println("error when creating file ", err)
 	}
-	// from the server response, read and write the text
-	body, _ := ioutil.ReadAll(request.Body)
-	// write header and body to file
-	// "{\"matches\":"
+	// read the response of the http call
+	body, _ := ioutil.ReadAll(resp.Body)
+
+	// write formatted text to file
 	file.WriteString("{\"matches\":")
 	file.Write(body)
 	file.WriteString("}")
 
-	if err != nil {
-		fmt.Println("error when writing to file :", err)
-	}
-
-	// wait until func is done to close the http request and file
-	defer request.Body.Close()
-	defer file.Close()
+	// wait until everything  is done to close the http request and file
+	resp.Body.Close()
+	file.Close()
 }
