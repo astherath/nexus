@@ -24,12 +24,9 @@ import (
 // cURL func for the api to get exported
 func CURL() {
 	// saving our token instead of using a header
-	token := "?token=8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRs"
+	token := "&token=8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
 	// url to access TODO: let this take different params
 	url := "https://api.pandascore.co/leagues/league-of-legends-lcs/matches?filter[status]=not_started&sort=begin_at" + token
-
-	//TODO remove
-	fmt.Println("url: ", url)
 
 	// calls the get func to the url and error checks
 	request, err := http.Get(url)
@@ -37,24 +34,22 @@ func CURL() {
 		fmt.Println("error when using http get: ", err)
 	}
 
-	// gets the response from the request
-	/* response, err := http.DefaultClient.Do(request) */
-	// if err != nil {
-	// fmt.Println("error when gettin response ", err)
-	/* } */
-
-	// create json file to write res to
+	// create json file to write response to
 	file, err := os.Create("matches.json")
 	if err != nil {
 		fmt.Println("error when creating file ", err)
 	}
 	// from the server response, read and write the text
 	body, _ := ioutil.ReadAll(request.Body)
-	l, err := file.Write(body)
+	// write header and body to file
+	// "{\"matches\":"
+	file.WriteString("{\"matches\":")
+	file.Write(body)
+	file.WriteString("}")
+
 	if err != nil {
 		fmt.Println("error when writing to file :", err)
 	}
-	fmt.Println(l, "bytes were written succesfully")
 
 	// wait until func is done to close the http request and file
 	defer request.Body.Close()
