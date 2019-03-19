@@ -22,6 +22,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// stores pathname of the json file to pass into the packages
+var pathname = "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
+
 // upcomingCmd represents the upcoming command
 var upcomingCmd = &cobra.Command{
 	Use:   "upcoming",
@@ -67,22 +70,25 @@ func init() {
 
 }
 
-// if the --all flag is passed, pass this function to display ALL upcoming matches
-func showAll() {
-	// stores pathname of the json file to pass into the packages
-	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
-
+// using global pathname, breaks down the matches
+func getMatches() parser.Matches {
 	// create a matches struct (derived from parser pkg)
 	var matches parser.Matches
 
 	// parses the json file with the given pathname and stores the result
 	matches = parser.Parse(pathname)
 
-	// creates a string var to hold the result of the handler
-	var response string
+	return matches
 
+}
+
+// if the --all flag is passed, pass this function to display ALL upcoming matches
+func showAll() {
+
+	// calls func to get matches from global pathname
+	matches := getMatches()
 	// passes the matches into the handler and stores the string returned
-	response = handler.GetAllMatches(matches)
+	response := handler.GetAllMatches(matches)
 
 	// prints the string with all the match info in it
 	fmt.Println(response)
@@ -90,18 +96,9 @@ func showAll() {
 
 // if no flag is passed, call this function and take the n amount of weeks to show
 func showWeeks(weeks int) {
-	// stores pathname of the json file to pass into the packages
-	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
 
-	// create a matches struct (derived from parser pkg)
-	var matches parser.Matches
-
-	// parses the json file with the given pathname and stores the result
-	matches = parser.Parse(pathname)
-
-	// creates a string var to hold the result of the handler
-	var response string
-
+	// calls func to get matches from global pathname
+	matches := getMatches()
 	// passes the matches into the handler and stores the amount of weeks wanted
 	response, err := handler.GetWeeks(matches, weeks)
 	if err != nil {
