@@ -109,6 +109,34 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 	return matchInfo, nil
 }
 
+// given a set of matches and a date determine if the data was changed
+func HasChanged(ms parser.Matches, date string) bool {
+
+	// TODO improve logic (so far only checks first match)
+	first := ms.Matches[0]
+
+	// store our current format
+	format := "2006-01-02T15:04:05Z"
+
+	// parse the time string and error check
+	date_pulled, err := time.Parse(format, date)
+	if err != nil {
+		fmt.Println("error parsing date given since last changed: ", err)
+	}
+
+	// store the date last modified
+	date_modified := first.Modified_at
+	// parse the date
+	modified_at, err := time.Parse(format, date_modified)
+	if err != nil {
+		fmt.Println("error formatting date modified at: ", err)
+	}
+
+	// if program has changed since date given return true
+	return modified_at.After(date_pulled)
+
+}
+
 // returns the data of the match in a suitable format given a Match
 func readDate(m parser.Match) string {
 
