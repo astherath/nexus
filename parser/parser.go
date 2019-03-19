@@ -23,10 +23,11 @@ import (
 
 // create struct to get valuable data from json file
 type Match struct {
-	Name     string
-	Begin_at string
-	Status   string
-	Winner   Winner
+	Name        string
+	Begin_at    string
+	Status      string
+	Winner      Winner
+	Modified_at string
 }
 
 type Winner struct {
