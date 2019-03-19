@@ -41,13 +41,6 @@ func CURL() {
 	// add headers to request
 	req.Header.Set("Authorization", "Bearer "+token)
 
-	// for the "If-Modified-Since" header, format today's date
-	today := time.Now()
-	// format the date to match the api's date
-	today_form := today.Format(time.RFC1123)
-
-	req.Header.Add("If-Modified-Since", today_form)
-
 	// executes combined call to client
 	resp, err := client.Do(req)
 	if err != nil {
