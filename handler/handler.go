@@ -110,24 +110,17 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 }
 
 // given a set of matches and a date determine if the data was changed
-func HasChanged(ms parser.Matches, date string) (bool, error) {
-
-	// TODO improve logic (so far only checks first match)
-	first := ms.Matches[0]
-
+func HasChanged(ms parser.Matches, date_pulled time.Time) (bool, error) {
 	// returns error if match is empty (no data)
 	if len(ms.Matches) == 0 {
 		return false, errors.New("data not found")
 	}
 
+	// TODO improve logic (so far only checks first match)
+	first := ms.Matches[0]
+
 	// store our current format
 	format := "2006-01-02T15:04:05Z"
-
-	// parse the time string and error check
-	date_pulled, err := time.Parse(format, date)
-	if err != nil {
-		fmt.Println("error parsing date given since last changed: ", err)
-	}
 
 	// store the date last modified
 	date_modified := first.Modified_at
