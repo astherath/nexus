@@ -15,6 +15,7 @@
 package parser
 
 import (
+	"errors"
 	"fmt"
 	"io/ioutil"
 
@@ -39,18 +40,19 @@ type Matches struct {
 	Matches []Match
 }
 
-func Parse(pathname string) Matches {
+func Parse(pathname string) (Matches, error) {
 
 	// read the json file in the pathname given as a byte array
-	fileArray, er := ioutil.ReadFile(pathname)
-
-	// error handling for the file reading
-	if er != nil {
-		fmt.Println("error reading the file using ioutil: ", er)
-	}
+	fileArray, err := ioutil.ReadFile(pathname)
 
 	// also initializes a matches struct to store our data
 	var matches Matches
+
+	// error handling for the file reading
+	if err != nil {
+		fmt.Println("error reading the file using ioutil: ", err)
+		return matches, errors.New("file reading error")
+	}
 
 	// unmarshal json file into the struct we've created
 	eror := json.Unmarshal(fileArray, &matches)
@@ -61,6 +63,6 @@ func Parse(pathname string) Matches {
 	}
 
 	// returns marshalled array of matches
-	return matches
+	return matches, nil
 
 }
