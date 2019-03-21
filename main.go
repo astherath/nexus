@@ -15,11 +15,48 @@
 package main
 
 import (
+	"fmt"
+	"os"
+	"time"
+
 	"github.com/astherath/nexus/commands"
 	"github.com/astherath/nexus/fetcher"
+	"github.com/astherath/nexus/handler"
+	"github.com/astherath/nexus/parser"
 )
+
+var pathname = "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
 
 func main() {
 	commands.RootCmd.Execute()
-	fetcher.CURL()
+	// check if file trying to be accesed exsits, if not, create it
+	if _, err := os.Stat(pathname); err == nil {
+
+		process()
+
+	} else {
+		// if file not found create it wiht curl
+		fetcher.CURL()
+		process()
+	}
+}
+
+func process() {
+
+	// parses the json file with the given pathname and stores the result
+	matches, err := parser.Parse(pathname)
+	if err != nil {
+		fmt.Println("error parsing file: ", err)
+	}
+
+	// TODO docs
+	ti := time.Now()
+	changed, err := handler.HasChanged(matches, ti)
+	if err != nil {
+		fmt.Println("error when seeing if matches have changed: ", err)
+	}
+
+	if changed {
+		fetcher.CURL()
+	}
 }
