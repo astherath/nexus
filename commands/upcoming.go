@@ -72,11 +72,11 @@ func init() {
 
 // using global pathname, breaks down the matches
 func getMatches() parser.Matches {
-	// create a matches struct (derived from parser pkg)
-	var matches parser.Matches
-
 	// parses the json file with the given pathname and stores the result
-	matches = parser.Parse(pathname)
+	matches, err := parser.Parse(pathname)
+	if err != nil {
+		fmt.Println("error when getting matches: ", err)
+	}
 
 	return matches
 
