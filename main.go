@@ -28,7 +28,7 @@ import (
 var pathname = "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
 
 func main() {
-	commands.RootCmd.Execute()
+
 	// check if file trying to be accesed exsits, if not, create it
 	if _, err := os.Stat(pathname); err == nil {
 
@@ -39,6 +39,8 @@ func main() {
 		fetcher.CURL()
 		process()
 	}
+
+	commands.RootCmd.Execute()
 }
 
 func process() {

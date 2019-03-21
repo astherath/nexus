@@ -124,6 +124,7 @@ func HasChanged(ms parser.Matches, date_pulled time.Time) (bool, error) {
 
 	// store the date last modified
 	date_modified := first.Modified_at
+
 	// parse the date
 	modified_at, err := time.Parse(format, date_modified)
 	if err != nil {
