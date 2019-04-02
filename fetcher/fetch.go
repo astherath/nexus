@@ -27,7 +27,7 @@ func CURL() {
 	// saving our token instead of using a header
 	token := "8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
 	// url to access TODO: let this take different params
-	url := "https://api.pandascore.co/leagues/league-of-legends-lcs/matches?filter[status]=not_started&sort=begin_at"
+	url := "https://api.pandascore.co/leagues/league-of-legends-lec/matches?sort=begin_at"
 
 	// opens a http client in order to set a header and sets the timeout to 20 seconds
 	client := &http.Client{Timeout: time.Second * 20}
