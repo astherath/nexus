@@ -24,16 +24,25 @@ import (
 
 // create struct to get valuable data from json file
 type Match struct {
-	Name        string
-	Begin_at    string
-	Status      string
-	Winner      Winner
-	Modified_at string
+	Name            string
+	Begin_at        string
+	Status          string
+	Modified_at     string
+	Number_of_games int
+	Games           []Game
+	Winner          Winner
+}
+
+// struct to hold individual games (used for series)
+type Game struct {
+	Winner   Winner
+	Finished bool
 }
 
 type Winner struct {
 	Name    string
 	Acronym string
+	Id      int
 }
 
 type Matches struct {
