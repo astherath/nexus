@@ -89,7 +89,7 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 			ended, status := readStatus(current)
 
 			// if the match has ended (status returns 1), then respond with winner
-			if ended == 1 {
+			if ended {
 				// assign the winner of the match to a var
 				winnerName := current.Winner.Name
 				// concat the winner to the info string
@@ -102,6 +102,11 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 			startTime := readDate(current)
 			// concats the formatted date to the match info string
 			matchInfo += "\t\tMatch Starts at: " + startTime + "\n\n"
+
+			// TODO verify
+			matchInfo += fmt.Sprintf("\t\tNumber of games in match: %d\n", current.Number_of_games)
+			matchInfo += fmt.Sprintf("\t\tGames: %+v\n", current.Games)
+			// matchInfo += "\t\tWinner: " + current.Winner)
 		}
 	}
 
@@ -161,16 +166,16 @@ func readDate(m parser.Match) string {
 	return string(post)
 }
 
-func readStatus(m parser.Match) (int, string) {
+func readStatus(m parser.Match) (bool, string) {
 
 	// stores the status of the Match passed
 	status := m.Status
 
 	// simple if statement to return a formatted version of the match status
 	if status == "not_started" {
-		return 0, "Match Not Started"
+		return false, "Match Not Started"
 	} else {
-		return 1, "Match Started"
+		return true, "Match Started"
 	}
 }
 
