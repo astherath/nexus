@@ -27,7 +27,7 @@ func CURL() {
 	// saving our token instead of using a header
 	token := "8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
 	// url to access TODO: let this take different params
-	url := "https://api.pandascore.co/leagues/league-of-legends-lec/matches?sort=begin_at"
+	url := "https://api.pandascore.co/leagues/league-of-legends-lec/matches?filter[number_of_games]=5&sort=begin_at"
 
 	// opens a http client in order to set a header and sets the timeout to 20 seconds
 	client := &http.Client{Timeout: time.Second * 20}
@@ -57,6 +57,50 @@ func CURL() {
 
 	// write formatted text to file
 	file.WriteString("{\"matches\":")
+	file.Write(body)
+	file.WriteString("}")
+
+	// wait until everything  is done to close the http request and file
+	resp.Body.Close()
+	file.Close()
+
+	getTeams()
+}
+
+func getTeams() {
+	// saving our token instead of using a header
+	token := "8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
+	// url to access TODO: let this take different params
+	url := "https://api.pandascore.co/lol/series/league-of-legends-lec-spring-2019/teams"
+
+	// opens a http client in order to set a header and sets the timeout to 20 seconds
+	client := &http.Client{Timeout: time.Second * 20}
+
+	// creates  an http request to the url
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		fmt.Println("error using http new request: ", err)
+	}
+
+	// add headers to request
+	req.Header.Set("Authorization", "Bearer "+token)
+
+	// executes combined call to client
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("error using client do with req: ", err)
+	}
+
+	// create json file to write response to
+	file, err := os.Create("teams.json")
+	if err != nil {
+		fmt.Println("error when creating file ", err)
+	}
+	// read the response of the http call
+	body, _ := ioutil.ReadAll(resp.Body)
+
+	// write formatted text to file
+	file.WriteString("{\"teams\":")
 	file.Write(body)
 	file.WriteString("}")
 

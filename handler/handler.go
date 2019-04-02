@@ -32,17 +32,39 @@ type week struct {
 
 // handles and returns a printable statement given a Week
 func GetAllMatches(ms parser.Matches) string {
-	// splits the weeks into matches to find how many weeks there are
-	weeks := splitWeeks(ms)
 
-	// gets the week info for all availbale weeks and returns it
-	matchInfo, err := GetWeeks(ms, len(weeks))
-	if err != nil {
-		fmt.Println("error using --all flag: ", err)
-		return "error"
+	// check if series
+	if ms.Matches[0].Number_of_games > 1 {
+		matchInfo := GetSeries(ms)
+		return matchInfo
+	} else {
+		// splits the weeks into matches to find how many weeks there are
+		weeks := splitWeeks(ms)
+
+		// gets the week info for all availbale weeks and returns it
+		matchInfo, err := GetWeeks(ms, len(weeks))
+		if err != nil {
+			fmt.Println("error using --all flag: ", err)
+			return "error"
+		}
+
+		return matchInfo
 	}
 
-	return matchInfo
+}
+
+// reads/returns match info if we're in series (playoffs) instead of weeks
+func GetSeries(ms parser.Matches) string {
+
+	response := ""
+
+	// we assume that each match is a series, so just iterate
+	for _, match := range ms.Matches {
+		response += handleSeries(match)
+	}
+
+	return response
+
 }
 
 // returns the specified amoutn of upcoming weeks (returns error if param passed is invalid)
@@ -103,10 +125,6 @@ func GetWeeks(ms parser.Matches, weeks_requested int) (string, error) {
 			// concats the formatted date to the match info string
 			matchInfo += "\t\tMatch Starts at: " + startTime + "\n\n"
 
-			// TODO verify
-			matchInfo += fmt.Sprintf("\t\tNumber of games in match: %d\n", current.Number_of_games)
-			matchInfo += fmt.Sprintf("\t\tGames: %+v\n", current.Games)
-			// matchInfo += "\t\tWinner: " + current.Winner)
 		}
 	}
 
@@ -207,5 +225,37 @@ func splitWeeks(ms parser.Matches) (wks []week) {
 
 	// returns the array of weeks
 	return weeks
+
+}
+
+// func for multiple matches (series)
+func handleSeries(m parser.Match) string {
+
+	// instance vars
+	current := m
+	name := current.Name
+	// status := current.Status
+	games := current.Games
+	bestof := current.Number_of_games
+	var finished string
+
+	// header
+	response := fmt.Sprintf("Best of %d series: %s\n", bestof, name)
+	// go through all games
+	for index, game := range games {
+
+		if !game.Finished {
+			finished = "Game not started"
+		} else {
+			id := game.Winner.Id
+			// call the parser to get the map
+			team_map := parser.GetMap()
+
+			finished = team_map[id]
+		}
+		response += fmt.Sprintf("\tGame %d: %s\n", index+1, finished)
+	}
+
+	return response + "\n"
 
 }

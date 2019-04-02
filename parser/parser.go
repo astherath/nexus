@@ -37,6 +37,7 @@ type Match struct {
 type Game struct {
 	Winner   Winner
 	Finished bool
+	Begin_at string
 }
 
 type Winner struct {
@@ -48,6 +49,18 @@ type Winner struct {
 type Matches struct {
 	Matches []Match
 }
+
+type Team struct {
+	Id      int
+	Acronym string
+	Name    string
+}
+
+type Teams struct {
+	Teams []Team
+}
+
+var team_map map[int]string
 
 func Parse(pathname string) (Matches, error) {
 
@@ -71,7 +84,51 @@ func Parse(pathname string) (Matches, error) {
 		fmt.Println("error unmarshaling the file: ", eror)
 	}
 
+	// call parseTeam func
+	team_map = parseTeam()
+
 	// returns marshalled array of matches
 	return matches, nil
+
+}
+
+func GetMap() map[int]string {
+	return team_map
+}
+
+func parseTeam() map[int]string {
+	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/teams.json"
+	// read the json file in the pathname given as a byte array
+	fileArray, err := ioutil.ReadFile(pathname)
+
+	// also initializes a matches struct to store our data
+	var tms Teams
+
+	// error handling for the file reading
+	if err != nil {
+		fmt.Println("error reading the file using ioutil: ", err)
+	}
+
+	// unmarshal json file into the struct we've created
+	eror := json.Unmarshal(fileArray, &tms)
+
+	// error handling again for the json file marshaling
+	if eror != nil {
+		fmt.Println("error unmarshaling the file: ", eror)
+	}
+
+	// create map
+	var team_map map[int]string
+	team_map = make(map[int]string)
+
+	// now iterate and make map
+	for _, tm := range tms.Teams {
+		id := tm.Id
+		acronym := tm.Acronym
+
+		team_map[id] = acronym
+	}
+
+	return team_map
 
 }
