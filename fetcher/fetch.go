@@ -22,12 +22,16 @@ import (
 	"time"
 )
 
+var LCK int = 1602
+var LEC int = 1704
+var LCS int = 1705
+
 // cURL func for the api to get exported
 func CURL() {
 	// saving our token instead of using a header
 	token := "8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
 	// url to access TODO: let this take different params
-	url := "https://api.pandascore.co/leagues/league-of-legends-lec/matches?filter[number_of_games]=5&sort=begin_at"
+	url := fmt.Sprintf("https://api.pandascore.co/series/%d/matches?filter[number_of_games]=5&sort=begin_at", LEC)
 
 	// opens a http client in order to set a header and sets the timeout to 20 seconds
 	client := &http.Client{Timeout: time.Second * 20}
@@ -71,7 +75,7 @@ func getTeams() {
 	// saving our token instead of using a header
 	token := "8VnQ3mOjbj6arh_XBR4Pwv1cHdUZsyRr-552YTOl7ECffjPxRss"
 	// url to access TODO: let this take different params
-	url := "https://api.pandascore.co/lol/series/league-of-legends-lec-spring-2019/teams"
+	url := fmt.Sprintf("https://api.pandascore.co/lol/series/%d/teams", LEC)
 
 	// opens a http client in order to set a header and sets the timeout to 20 seconds
 	client := &http.Client{Timeout: time.Second * 20}
