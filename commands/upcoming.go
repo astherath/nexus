@@ -39,13 +39,13 @@ var upcomingCmd = &cobra.Command{
 			// call func to show all
 			showAll()
 
-		} else {
-			// stores the input given to flag
-			next, _ := cmd.Flags().GetInt("next")
+		} /* else { */
+		// // stores the input given to flag
+		// next, _ := cmd.Flags().GetInt("next")
 
-			// calls the showWeek func for the wanted amount of weeks
-			showWeeks(next)
-		}
+		// // calls the showWeek func for the wanted amount of weeks
+		// showWeeks(next)
+		/* } */
 	},
 }
 
@@ -94,17 +94,17 @@ func showAll() {
 	fmt.Println(response)
 }
 
-// if no flag is passed, call this function and take the n amount of weeks to show
-func showWeeks(weeks int) {
+/* // if no flag is passed, call this function and take the n amount of weeks to show */
+// func showWeeks(weeks int) {
 
-	// calls func to get matches from global pathname
-	matches := getMatches()
-	// passes the matches into the handler and stores the amount of weeks wanted
-	response, err := handler.GetWeeks(matches, weeks)
-	if err != nil {
-		fmt.Println("error when calling showWeeks func: ", err)
-	}
+// // calls func to get matches from global pathname
+// matches := getMatches()
+// // passes the matches into the handler and stores the amount of weeks wanted
+// response, err := handler.GetWeeks(matches, weeks)
+// if err != nil {
+// fmt.Println("error when calling showWeeks func: ", err)
+// }
 
-	// prints the string with all the match info in it
-	fmt.Println(response)
-}
+// // prints the string with all the match info in it
+// fmt.Println(response)
+/* } */
