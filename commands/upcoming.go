@@ -15,7 +15,9 @@
 package commands
 
 import (
+	"errors"
 	"fmt"
+	"os"
 
 	"github.com/astherath/nexus/handler"
 	"github.com/astherath/nexus/parser"
@@ -31,13 +33,21 @@ var upcomingCmd = &cobra.Command{
 	Short: "Displays the upcoming LEC matches ",
 	Long:  `Shows the upcoming matches for the LEC 2019 Spring Split`,
 	// use RunE to throw an error if the user calls this command without any arguments
-	Run: func(cmd *cobra.Command, args []string) {
+	RunE: func(cmd *cobra.Command, args []string) error {
 		all, _ := cmd.Flags().GetBool("all")
 
 		// check if user wants all matches displayed
 		if all {
-			// call func to show all
-			showAll()
+			// check that the file exists, if not make user fetch data
+			if _, err := os.Stat(pathname); err != nil {
+				return errors.New("Please use the fetch command first, or type --help for more information")
+				fmt.Println("ERROR NO FILE FOUND")
+			} else {
+
+				// call func to show all
+				showAll()
+				return nil
+			}
 
 		} /* else { */
 		// // stores the input given to flag
@@ -46,6 +56,7 @@ var upcomingCmd = &cobra.Command{
 		// // calls the showWeek func for the wanted amount of weeks
 		// showWeeks(next)
 		/* } */
+		return nil
 	},
 }
 
