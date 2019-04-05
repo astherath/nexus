@@ -80,7 +80,7 @@ func init() {
 	upcomingCmd.Flags().BoolP("all", "a", false, "Show all upcoming weeks")
 
 	// flag to show 'n' amount of upcoming weeks
-	upcomingCmd.Flags().IntP("next", "n", 0, "Show a number ('n') of upcoming weeks")
+	// upcomingCmd.Flags().IntP("next", "n", 0, "Show a number ('n') of upcoming weeks")
 
 }
 
@@ -107,7 +107,6 @@ func getMatches() (parser.Matches, error) {
 	// parses the json file with the given pathname and stores the result
 	matches, err := parser.Parse(pathname)
 	if err != nil {
-		fmt.Println("error when getting matches: ", err)
 		return matches, err
 	}
 
