@@ -15,6 +15,8 @@
 package commands
 
 import (
+	"fmt"
+
 	"github.com/astherath/nexus/fetcher"
 
 	"github.com/spf13/cobra"
@@ -22,17 +24,18 @@ import (
 
 // fetchCmd represents the fetch command
 var fetchCmd = &cobra.Command{
-	Use:   "fetch",
+	Use:   "fetch [abbreviation of region]",
 	Short: "Initial command used to fetch the match data",
-	Long: `Fetches the team and series data for the matches
+	Long: "\n" + `Fetches the team and series data for the matches
 	in order to display the info. Must only be done once when the
 	client initializes.`,
 	Args: cobra.MinimumNArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
-		err := fetcher.CURL(args[0])
+		response, err := fetcher.CURL(args[0])
 		if err != nil {
 			return err
 		}
+		fmt.Println(response)
 		return nil
 
 	},
