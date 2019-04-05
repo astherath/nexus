@@ -41,11 +41,14 @@ var upcomingCmd = &cobra.Command{
 			// check that the file exists, if not make user fetch data
 			if _, err := os.Stat(pathname); err != nil {
 				return errors.New("Please use the fetch command first, or type --help for more information")
-				fmt.Println("ERROR NO FILE FOUND")
 			} else {
 
 				// call func to show all
-				showAll()
+				resp, err := showAll()
+				if err != nil {
+					return errors.New("Invalid/corrupted data. Please try using the fetch command, then try again. type --help for more information")
+				}
+				fmt.Println(resp)
 				return nil
 			}
 
@@ -81,28 +84,35 @@ func init() {
 
 }
 
+// if the --all flag is passed, pass this function to display ALL upcoming matches
+func showAll() (string, error) {
+
+	// calls func to get matches from global pathname
+	matches, err := getMatches()
+	if err != nil {
+		return "", err
+	}
+	// passes the matches into the handler and stores the string returned
+	response, err := handler.GetAllMatches(matches)
+	if err != nil {
+		return "", err
+	}
+
+	// prints the string with all the match info in it
+	return response, nil
+}
+
 // using global pathname, breaks down the matches
-func getMatches() parser.Matches {
+func getMatches() (parser.Matches, error) {
 	// parses the json file with the given pathname and stores the result
 	matches, err := parser.Parse(pathname)
 	if err != nil {
 		fmt.Println("error when getting matches: ", err)
+		return matches, err
 	}
 
-	return matches
+	return matches, nil
 
-}
-
-// if the --all flag is passed, pass this function to display ALL upcoming matches
-func showAll() {
-
-	// calls func to get matches from global pathname
-	matches := getMatches()
-	// passes the matches into the handler and stores the string returned
-	response := handler.GetAllMatches(matches)
-
-	// prints the string with all the match info in it
-	fmt.Println(response)
 }
 
 /* // if no flag is passed, call this function and take the n amount of weeks to show */

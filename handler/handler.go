@@ -31,12 +31,16 @@ type week struct {
 }
 
 // handles and returns a printable statement given a Week
-func GetAllMatches(ms parser.Matches) string {
+func GetAllMatches(ms parser.Matches) (string, error) {
 
+	if len(ms.Matches) == 0 {
+		err := errors.New("error getting all matches: none found")
+		return "", err
+	}
 	// check if series
 	if ms.Matches[0].Number_of_games > 1 {
 		matchInfo := GetSeries(ms)
-		return matchInfo
+		return matchInfo, nil
 	} else {
 		// splits the weeks into matches to find how many weeks there are
 		weeks := splitWeeks(ms)
@@ -44,11 +48,11 @@ func GetAllMatches(ms parser.Matches) string {
 		// gets the week info for all availbale weeks and returns it
 		matchInfo, err := GetWeeks(ms, len(weeks))
 		if err != nil {
-			fmt.Println("error using --all flag: ", err)
-			return "error"
+			eror := errors.New("Error splitting weeks")
+			return "", eror
 		}
 
-		return matchInfo
+		return matchInfo, nil
 	}
 
 }
