@@ -16,7 +16,6 @@ package parser
 
 import (
 	"errors"
-	"fmt"
 	"io/ioutil"
 
 	"encoding/json"
@@ -72,7 +71,6 @@ func Parse(pathname string) (Matches, error) {
 
 	// error handling for the file reading
 	if err != nil {
-		fmt.Println("error reading the file using ioutil: ", err)
 		return matches, errors.New("file reading error")
 	}
 
@@ -81,11 +79,17 @@ func Parse(pathname string) (Matches, error) {
 
 	// error handling again for the json file marshaling
 	if eror != nil {
-		fmt.Println("error unmarshaling the file: ", eror)
+
+		return matches, errors.New("file reading error")
 	}
 
+	var errr error
+
 	// call parseTeam func
-	team_map = parseTeam()
+	team_map, err = parseTeam()
+	if errr != nil {
+		return matches, errr
+	}
 
 	// returns marshalled array of matches
 	return matches, nil
@@ -96,7 +100,11 @@ func GetMap() map[int]string {
 	return team_map
 }
 
-func parseTeam() map[int]string {
+func parseTeam() (map[int]string, error) {
+	// create map
+	team_map = make(map[int]string)
+
+	// store pathname
 	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/teams.json"
 	// read the json file in the pathname given as a byte array
 	fileArray, err := ioutil.ReadFile(pathname)
@@ -106,7 +114,7 @@ func parseTeam() map[int]string {
 
 	// error handling for the file reading
 	if err != nil {
-		fmt.Println("error reading the file using ioutil: ", err)
+		return team_map, err
 	}
 
 	// unmarshal json file into the struct we've created
@@ -114,12 +122,10 @@ func parseTeam() map[int]string {
 
 	// error handling again for the json file marshaling
 	if eror != nil {
-		fmt.Println("error unmarshaling the file: ", eror)
-	}
 
-	// create map
-	var team_map map[int]string
-	team_map = make(map[int]string)
+		return team_map, eror
+
+	}
 
 	// now iterate and make map
 	for _, tm := range tms.Teams {
@@ -129,6 +135,6 @@ func parseTeam() map[int]string {
 		team_map[id] = acronym
 	}
 
-	return team_map
+	return team_map, nil
 
 }
