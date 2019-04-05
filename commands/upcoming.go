@@ -25,7 +25,7 @@ import (
 )
 
 // stores pathname of the json file to pass into the packages
-var pathname = "/Users/felipearce/go/src/github.com/astherath/nexus/matches.json"
+var pathname = "matches.json"
 
 // upcomingCmd represents the upcoming command
 var upcomingCmd = &cobra.Command{

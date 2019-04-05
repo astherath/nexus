@@ -105,7 +105,7 @@ func parseTeam() (map[int]string, error) {
 	team_map = make(map[int]string)
 
 	// store pathname
-	pathname := "/Users/felipearce/go/src/github.com/astherath/nexus/teams.json"
+	pathname := "teams.json"
 	// read the json file in the pathname given as a byte array
 	fileArray, err := ioutil.ReadFile(pathname)
 
