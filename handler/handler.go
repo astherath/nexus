@@ -262,3 +262,19 @@ func handleSeries(m parser.Match) string {
 	return response + "\n"
 
 }
+
+/* func HasChanged(m parser.Match) bool { */
+// now := time.Now()
+// mod_at := readDate(m)
+
+// // store our current format
+// form := "Mon, January 2, 3 PM"
+
+// // parse the time string and error check
+// modified_at, err := time.Parse(form, mod_at)
+// if err != nil {
+// fmt.Println("error parsing time: ", err)
+// }
+
+// fmt.Println(now.Sub(modified_at))
+/* } */

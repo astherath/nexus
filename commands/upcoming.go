@@ -18,6 +18,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/astherath/nexus/handler"
 	"github.com/astherath/nexus/parser"
@@ -92,6 +93,21 @@ func showAll() (string, error) {
 	if err != nil {
 		return "", err
 	}
+
+	// stores time for hasChanged
+	now := time.Now()
+	changed, err := handler.HasChanged(matches, now)
+	if err != nil {
+		return "", err
+	}
+
+	var hasChanged string
+	if changed {
+		hasChanged = "The match data has been updated since last fetch. For accurate, up to date info, please fetch again"
+	} else {
+		hasChanged = ""
+	}
+
 	// passes the matches into the handler and stores the string returned
 	response, err := handler.GetAllMatches(matches)
 	if err != nil {
@@ -99,7 +115,7 @@ func showAll() (string, error) {
 	}
 
 	// prints the string with all the match info in it
-	return response, nil
+	return hasChanged + response, nil
 }
 
 // using global pathname, breaks down the matches
