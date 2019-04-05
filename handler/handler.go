@@ -240,11 +240,10 @@ func handleSeries(m parser.Match) string {
 	name := current.Name
 	// status := current.Status
 	games := current.Games
-	bestof := current.Number_of_games
 	var finished string
 
 	// header
-	response := fmt.Sprintf("Best of %d series: %s\n", bestof, name)
+	response := fmt.Sprintf("%s\n", name)
 	// go through all games
 	for index, game := range games {
 
