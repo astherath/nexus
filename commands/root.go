@@ -31,7 +31,7 @@ var RootCmd = &cobra.Command{
 	Short: "Displays LoL pro match data",
 
 	// long desc
-	Long: `Tool to fetch and display data of upcoming professional
+	Long: "\n" + `Tool to fetch and display data of upcoming professional
     	League of Legends matches from the major pro regions`,
 }
 
