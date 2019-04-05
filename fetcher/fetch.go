@@ -28,15 +28,17 @@ import (
 var LCK int = 1602
 var LEC int = 1704
 var LCS int = 1705
+var LPL int = 1700
 var leagues map[string]int
 
 // cURL func for the api to get exported
-func CURL(league string) error {
+func CURL(league string) (string, error) {
 	// create the map to be used for the league selection
 	leagues = make(map[string]int)
 	leagues["LCK"] = LCK
 	leagues["LEC"] = LEC
 	leagues["LCS"] = LCS
+	leagues["LPL"] = LPL
 
 	league = strings.ToUpper(league)
 
@@ -44,7 +46,7 @@ func CURL(league string) error {
 	id := leagues[league]
 
 	if id == 0 {
-		return errors.New("Region name not found. Please enter the abreviation of a major league (e.g. LCK, LEC, LCS)")
+		return "", errors.New("Region name not found. Please enter the abreviation of a major league (e.g. LCK, LEC, LCS)")
 	}
 
 	// saving our token instead of using a header
@@ -59,7 +61,7 @@ func CURL(league string) error {
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		fmt.Println("error using http new request: ", err)
-		return err
+		return "", err
 	}
 
 	// add headers to request
@@ -69,14 +71,14 @@ func CURL(league string) error {
 	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Println("error using client do with req: ", err)
-		return err
+		return "", err
 	}
 
 	// create json file to write response to
 	file, err := os.Create("matches.json")
 	if err != nil {
 		fmt.Println("error when creating file ", err)
-		return err
+		return "", err
 	}
 	// read the response of the http call
 	body, _ := ioutil.ReadAll(resp.Body)
@@ -92,7 +94,7 @@ func CURL(league string) error {
 
 	getTeams(id)
 
-	return nil
+	return fmt.Sprintf("Succesfully fetched match data for: %s", league), nil
 }
 
 func getTeams(id int) {
