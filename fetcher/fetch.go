@@ -29,6 +29,7 @@ var LCK int = 1602
 var LEC int = 1704
 var LCS int = 1705
 var LPL int = 1700
+var MSI int = 1784
 var leagues map[string]int
 
 // cURL func for the api to get exported
@@ -39,6 +40,7 @@ func CURL(league string) (string, error) {
 	leagues["LEC"] = LEC
 	leagues["LCS"] = LCS
 	leagues["LPL"] = LPL
+	leagues["MSI"] = MSI
 
 	league = strings.ToUpper(league)
 
